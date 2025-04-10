@@ -1,9 +1,4 @@
-// Theme toggle
-const toggle = document.getElementById('theme-toggle');
-toggle.addEventListener('change', () => {
-  const html = document.documentElement;
-  html.setAttribute('data-theme', toggle.checked ? 'dark' : 'light');
-});
+
 
 // Scroll animation
 const faders = document.querySelectorAll('.fade-in');

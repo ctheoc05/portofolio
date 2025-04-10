@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,117 +8,150 @@
 </head>
 <body>
 
-  <header>
-    <h1>Chrysanthi Theocharidi</h1>
-    <p>Computer Science Student & Web Developer</p>
-    <div class="toggle-wrapper">
-      <label class="switch">
-        <input type="checkbox" id="theme-toggle">
-        <span class="slider round"></span>
-      </label>
+  <!-- HEADER -->
+  <header class="hero-header">
+    <div id="particles-js"></div>
+  
+    <div class="hero-content">
+      <img src="images/profile.jpg" alt="Profile" class="profile-circle" />
+      <h1>Hello, I'm <span class="highlight">Chrysanthi</span></h1>
+      <p class="subtitle">Computer Science Student & Web Developer</p>
+  
+      <div class="hero-buttons">
+        <a href="https://github.com/ctheoc05" class="btn" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/chrysanthi-theocharidi-48072a311/" class="btn btn-dark" target="_blank">LinkedIn</a>
+      </div>
+      <br></br>
+      <p align="center">
+        <a href="https://skillicons.dev">
+          <img src="https://skillicons.dev/icons?i=figma,html,php,css,react,js,prisma,java,c,cpp,eclipse,vscode,kotlin" />
+        </a>
+      </p>
+    
     </div>
   </header>
-
+  
+  <!-- MAIN CONTENT -->
   <main>
 
+    <!-- ABOUT -->
     <section id="about" class="fade-in">
-        <h2>About</h2>
-        <p>I’m a Computer Science student at University of Cyprus who loves building practical, beautiful web apps. I'm passionate about clean UI, performance, and user experience.</p>
-      </section>
+      <h2>About</h2>
+      <p>A passionate student that makes boring pages look extraordinary. 
+        I am always excited about UI technologies and Human Computer Interaction, and look forward in applying my skils into real word problems and solutions, with a perfectionist mindset that reflects in my work.
 
+      </p>
+    </section>
+
+    <!-- PROJECTS -->
     <section id="projects" class="fade-in">
       <h2>Projects</h2>
       <div class="projects-grid">
 
+        <!-- Trip Hunter -->
         <div class="project-card">
-            <h3>Trip Hunter</h3>
-            <p>Travel app with offline support, real-time food and nightlife suggestions, Maps API.</p>
-            <p><strong>Stack:</strong> React Native, Firebase, Google Maps</p>
-            <div class="project-gallery">
-                <div class="scroll-wrapper">
-                  <img src="images/homepage.png" alt="Trip Hunter Home">
-                  <img src="images/navigation.png" alt="Navigation View">
-                  <img src="images/restaurants.png" alt="Restaurants View">
-                  <img src="images/Details.png" alt="Details View">
-                  <img src="images/SeeOnMap.png" alt="See on Map">
-                  <img src="images/Weather.png" alt="Weather">
-
-                </div>
-              </div>
-              
-            <a href="https://www.figma.com/proto/WgF7LGHeJADoWtmfLh9Oyo/Project?t=Ym5acVaSRntqYTwU-1" target="_blank">Figma</a>
-            <a href="https://github.com/lne2003/TravelGuideApp" target="_blank">GitHub</a>
-          </div>
-          
-  
-          <div class="project-card">
-              <h3>SkyScanner</h3>
-              <p>A Figma-based mobile design showcasing intuitive navigation, layout, and transitions.</p>
-              <div class="project-gallery">
-                <div class="scroll-wrapper">
-                  <img src="images/GetStarted.png" alt="GetStarted">
-                  <img src="images/SearchFlight.png" alt="SearchFlight">
-                  <img src="images/BookFlight.png" alt="BookFlight">
-                  <img src="images/ChooseDates.png" alt="ChooseDates">
-                  <img src="images/SelectAirline.png" alt="SelectAirline">
-                  <img src="images/AirplaneInfo.png" alt="AirplaneInfo">
-
-                </div>
-              </div>
-              <a href="https://www.figma.com/proto/Fq9WslmN3Xc6Vwbg5OFIgq/Untitled?node-id=0-1&t=Ym5acVaSRntqYTwU-1" target="_blank">SkyScanner</a>
-          </div>
-
-
-          <div class="project-card">
-            <h3>WeatherDashboard</h3>
-            <p>A Weather App that integrates APIs in order to show weather stats and generate data graphs.</p>
-            <div class="project-gallery with-arrows">
-              <button class="scroll-btn left" onclick="scrollGallery(this, 'left')">&#8249;</button>
-              <div class="scroll-wrapper">
-                <img src="images/WeatherDashboard.png" alt="WeatherDashboard">
-                <img src="images/WeatherNow.png" alt="WeatherNow">
-                <img src="images/WeatherNext24hours.png" alt="WeatherNext24hours">
-                <img src="images/DetailsWeather.png" alt="DetailsWeather">
-                <img src="images/Graphs.png" alt="Graphs">
-              </div>
-              <button class="scroll-btn right" onclick="scrollGallery(this, 'right')">&#8250;</button>
+          <h3>Trip Hunter</h3>
+          <p>Travel app with offline support, real-time food and nightlife suggestions, Maps API.</p>
+          <p><strong>Stack:</strong> React Native, Firebase, Google Maps</p>
+          <div class="project-gallery">
+            <div class="scroll-wrapper">
+              <img src="images/homepage.png" alt="Trip Hunter Home" />
+              <img src="images/navigation.png" alt="Navigation" />
+              <img src="images/restaurants.png" alt="Restaurants" />
+              <img src="images/Details.png" alt="Details View" />
+              <img src="images/SeeOnMap.png" alt="See on Map" />
+              <img src="images/Weather.png" alt="Weather Screen" />
             </div>
-            
-            <a href="http://www.cs.ucy.ac.cy/~ctheoc05/epl425/" target="_blank">WeatherDashboard</a>
+          </div>
+          <a href="https://www.figma.com/proto/WgF7LGHeJADoWtmfLh9Oyo/Project?t=Ym5acVaSRntqYTwU-1" target="_blank">Figma</a>
+          &nbsp;|&nbsp;
+          <a href="https://github.com/lne2003/TravelGuideApp" target="_blank">GitHub</a>
         </div>
 
+        <!-- SkyScanner -->
+        <div class="project-card">
+          <h3>SkyScanner</h3>
+          <p>A Figma-based mobile design showcasing intuitive navigation, layout, and transitions.</p>
+          <div class="project-gallery">
+            <div class="scroll-wrapper">
+              <img src="images/GetStarted.png" alt="Get Started" />
+              <img src="images/SearchFlight.png" alt="Search Flight" />
+              <img src="images/BookFlight.png" alt="Book Flight" />
+              <img src="images/ChooseDates.png" alt="Choose Dates" />
+              <img src="images/SelectAirline.png" alt="Select Airline" />
+              <img src="images/AirplaneInfo.png" alt="Airplane Info" />
+            </div>
+          </div>
+          <a href="https://www.figma.com/proto/Fq9WslmN3Xc6Vwbg5OFIgq/Untitled?node-id=0-1&t=Ym5acVaSRntqYTwU-1" target="_blank">Figma</a>
+        </div>
+
+        <!-- WeatherDashboard -->
+        <div class="project-card">
+          <h3>WeatherDashboard</h3>
+          <p>A Weather App that integrates APIs to show current weather stats and visual graphs.</p>
+          <div class="project-gallery">
+            <div class="scroll-wrapper">
+              <img src="images/WeatherDashboard.png" alt="Main Dashboard" />
+              <img src="images/WeatherNow.png" alt="Weather Now" />
+              <img src="images/WeatherNext24hours.png" alt="Next 24 Hours" />
+              <img src="images/DetailsWeather.png" alt="Details" />
+              <img src="images/Graphs.png" alt="Weather Graphs" />
+            </div>
+          </div>
+          <a href="http://www.cs.ucy.ac.cy/~ctheoc05/epl425/" target="_blank">Live Demo</a>
+        </div>
+
+        <!-- EV Manager -->
         <div class="project-card">
           <h3>EV Manager</h3>
           <p>Portal for Electric Vehicle Grant apps. Role-based access, secure DB, admin features.</p>
-          <p><strong>Stack:</strong> React, Node.js, SQL Server</p>
+          <p><strong>Stack:</strong> PHP, CSS, js, SQL, TSQL</p>
           <a href="https://github.com/csavva2809/EPL342_Team21_EVManager" target="_blank">GitHub</a>
         </div>
 
-          
+        <!-- Eshop -->
         <div class="project-card">
-            <h3>Social Media Managed</h3>
-            <p>Managing Social Medias of Anthemio Flower Shop</p>
-            <a href="https://www.instagram.com/anthemioflowershop?igsh=NDVyejJrYWt5aWt5&utm_source=qr" target="_blank">Instagram</a>
-            <a href="https://www.tiktok.com/@anthemioflowershop?_t=ZN-8vPoxsNnlMU&_r=1" target="_blank">TikTok</a>
+          <h3>Jewllery Eshop</h3>
+          <p>An online shop for jewllery.</p>
+          <p><strong>Stack:</strong> React, Node.js, Prisma, SQL</p>
+          <a href="https://github.com/ctheoc05/WebProject" target="_blank">GitHub</a>
+        </div>
+        <!-- Social Media -->
+        <div class="project-card">
+          <h3>Social Media Managed</h3>
+          <p>Managed Instagram and TikTok content for Anthemio Flower Shop.</p>
+          <a href="https://www.instagram.com/anthemioflowershop" target="_blank">Instagram</a>
+          &nbsp;|&nbsp;
+          <a href="https://www.tiktok.com/@anthemioflowershop" target="_blank">TikTok</a>
         </div>
 
-        
-</div>
-
+      </div>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact" class="fade-in">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:anthiatheoha@gmail.com">anthiatheoha@gmail.com</a></p>
       <p>GitHub: <a href="https://github.com/ctheoc05" target="_blank">ctheoc05</a></p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/chrysanthi-theocharidi-48072a311/" target="_blank">LinkedIn</a></p>
     </section>
+
   </main>
 
+  <!-- FOOTER -->
   <footer>
     <p>© 2025 Chrysanthi Theocharidi</p>
   </footer>
 
+  <!-- JS -->
   <script src="script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script>
+  particlesJS.load('particles-js', 'particles.json', function () {
+    console.log('particles.js loaded');
+  });
+</script>
+
 </body>
 </html>

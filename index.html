@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chrysanthi Theocharidi | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+  
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+  
+</head>
+<body>
+
+  <header>
+    <h1>Chrysanthi Theocharidi</h1>
+    <p>Computer Science Student | Web Developer</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I’m Chrysanthi, a Computer Science student at the University of Cyprus passionate about full-stack development, problem solving, and creating user-friendly digital solutions.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>University of Cyprus</strong> — BSc Computer Science (2021–Present)</li>
+      <li><strong>Latsia Lyceum</strong> — Apolytirion (2018–2021), Grade: 18.61/20, Academic Excellence Awards</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul>
+      <li><strong>IT Help Desk Support</strong> — University of Cyprus (Sep 2024 – Present)</li>
+      <li><strong>Intern</strong> — Playtech BGT (Jun – Aug 2024), built an e-commerce platform using React.js, Node.js, and SQL Server</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <strong>EV Manager</strong>: <a href="https://github.com/csavva2809/EPL342_Team21_EVManager" target="_blank">GitHub</a>
+        <p>Portal for managing Electric Vehicle Grant applications. Multiple user types & secure database workflows.</p>
+      </li>
+      <li>
+        <strong>Trip Hunter</strong>: <a href="https://github.com/lne2003/TravelGuideApp" target="_blank">GitHub</a>
+        <p>Travel app with real-time recommendations, Google Maps, and offline features using local caching.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Web Dev: React, HTML/CSS, JavaScript, PHP</li>
+      <li>Backend: Node.js, SQL Server, API Development</li>
+      <li>Languages: Java, C, Kotlin</li>
+      <li>Other: Git, Firebase, Project Management</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:anthiatheoha@gmail.com">anthiatheoha@gmail.com</a></p>
+    <p>Phone: <a href="tel:+35796871264">+357 96871264</a></p>
+    <p>GitHub: <a href="https://github.com/ctheoc05" target="_blank">github.com/ctheoc05</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/chrysanthi-theocharidi-48072a311/" target="_blank">LinkedIn</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Chrysanthi Theocharidi</p>
+  </footer>
+  <script>
+    const faders = document.querySelectorAll('.fade-in');
+  
+    const appearOnScroll = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+  
+    faders.forEach(fade => {
+      appearOnScroll.observe(fade);
+    });
+  </script>
+  
+</body>
+</html>

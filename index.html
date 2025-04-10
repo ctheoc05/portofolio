@@ -1,113 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chrysanthi Theocharidi | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    }
-  
-    .fade-in.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  </style>
-  
 </head>
 <body>
 
   <header>
     <h1>Chrysanthi Theocharidi</h1>
-    <p>Computer Science Student | Web Developer</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <p>Computer Science Student & Web Developer</p>
+    <div class="toggle-wrapper">
+      <label class="switch">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider round"></span>
+      </label>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I’m Chrysanthi, a Computer Science student at the University of Cyprus passionate about full-stack development, problem solving, and creating user-friendly digital solutions.</p>
-  </section>
+  <main>
 
-  <section id="education">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>University of Cyprus</strong> — BSc Computer Science (2021–Present)</li>
-      <li><strong>Latsia Lyceum</strong> — Apolytirion (2018–2021), Grade: 18.61/20, Academic Excellence Awards</li>
-    </ul>
-  </section>
+    <section id="about" class="fade-in">
+        <h2>About</h2>
+        <p>I’m a Computer Science student at University of Cyprus who loves building practical, beautiful web apps. I'm passionate about clean UI, performance, and user experience.</p>
+      </section>
 
-  <section id="experience">
-    <h2>Experience</h2>
-    <ul>
-      <li><strong>IT Help Desk Support</strong> — University of Cyprus (Sep 2024 – Present)</li>
-      <li><strong>Intern</strong> — Playtech BGT (Jun – Aug 2024), built an e-commerce platform using React.js, Node.js, and SQL Server</li>
-    </ul>
-  </section>
+    <section id="projects" class="fade-in">
+      <h2>Projects</h2>
+      <div class="projects-grid">
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <strong>EV Manager</strong>: <a href="https://github.com/csavva2809/EPL342_Team21_EVManager" target="_blank">GitHub</a>
-        <p>Portal for managing Electric Vehicle Grant applications. Multiple user types & secure database workflows.</p>
-      </li>
-      <li>
-        <strong>Trip Hunter</strong>: <a href="https://github.com/lne2003/TravelGuideApp" target="_blank">GitHub</a>
-        <p>Travel app with real-time recommendations, Google Maps, and offline features using local caching.</p>
-      </li>
-    </ul>
-  </section>
+        <div class="project-card">
+            <h3>Trip Hunter</h3>
+            <p>Travel app with offline support, real-time food and nightlife suggestions, Maps API.</p>
+            <p><strong>Stack:</strong> React Native, Firebase, Google Maps</p>
+            <div class="project-gallery">
+                <div class="scroll-wrapper">
+                  <img src="images/homepage.png" alt="Trip Hunter Home">
+                  <img src="images/navigation.png" alt="Navigation View">
+                  <img src="images/restaurants.png" alt="Restaurants View">
+                  <img src="images/Details.png" alt="Details View">
+                  <img src="images/SeeOnMap.png" alt="See on Map">
+                  <img src="images/Weather.png" alt="Weather">
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Web Dev: React, HTML/CSS, JavaScript, PHP</li>
-      <li>Backend: Node.js, SQL Server, API Development</li>
-      <li>Languages: Java, C, Kotlin</li>
-      <li>Other: Git, Firebase, Project Management</li>
-    </ul>
-  </section>
+                </div>
+              </div>
+              
+            <a href="https://www.figma.com/proto/WgF7LGHeJADoWtmfLh9Oyo/Project?t=Ym5acVaSRntqYTwU-1" target="_blank">Figma</a>
+            <a href="https://github.com/lne2003/TravelGuideApp" target="_blank">GitHub</a>
+          </div>
+          
+  
+          <div class="project-card">
+              <h3>SkyScanner</h3>
+              <p>A Figma-based mobile design showcasing intuitive navigation, layout, and transitions.</p>
+              <div class="project-gallery">
+                <div class="scroll-wrapper">
+                  <img src="images/GetStarted.png" alt="GetStarted">
+                  <img src="images/SearchFlight.png" alt="SearchFlight">
+                  <img src="images/BookFlight.png" alt="BookFlight">
+                  <img src="images/ChooseDates.png" alt="ChooseDates">
+                  <img src="images/SelectAirline.png" alt="SelectAirline">
+                  <img src="images/AirplaneInfo.png" alt="AirplaneInfo">
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:anthiatheoha@gmail.com">anthiatheoha@gmail.com</a></p>
-    <p>Phone: <a href="tel:+35796871264">+357 96871264</a></p>
-    <p>GitHub: <a href="https://github.com/ctheoc05" target="_blank">github.com/ctheoc05</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/chrysanthi-theocharidi-48072a311/" target="_blank">LinkedIn</a></p>
-  </section>
+                </div>
+              </div>
+              <a href="https://www.figma.com/proto/Fq9WslmN3Xc6Vwbg5OFIgq/Untitled?node-id=0-1&t=Ym5acVaSRntqYTwU-1" target="_blank">SkyScanner</a>
+          </div>
+
+
+          <div class="project-card">
+            <h3>WeatherDashboard</h3>
+            <p>A Weather App that integrates APIs in order to show weather stats and generate data graphs.</p>
+            <div class="project-gallery with-arrows">
+              <button class="scroll-btn left" onclick="scrollGallery(this, 'left')">&#8249;</button>
+              <div class="scroll-wrapper">
+                <img src="images/WeatherDashboard.png" alt="WeatherDashboard">
+                <img src="images/WeatherNow.png" alt="WeatherNow">
+                <img src="images/WeatherNext24hours.png" alt="WeatherNext24hours">
+                <img src="images/DetailsWeather.png" alt="DetailsWeather">
+                <img src="images/Graphs.png" alt="Graphs">
+              </div>
+              <button class="scroll-btn right" onclick="scrollGallery(this, 'right')">&#8250;</button>
+            </div>
+            
+            <a href="http://www.cs.ucy.ac.cy/~ctheoc05/epl425/" target="_blank">WeatherDashboard</a>
+        </div>
+
+        <div class="project-card">
+          <h3>EV Manager</h3>
+          <p>Portal for Electric Vehicle Grant apps. Role-based access, secure DB, admin features.</p>
+          <p><strong>Stack:</strong> React, Node.js, SQL Server</p>
+          <a href="https://github.com/csavva2809/EPL342_Team21_EVManager" target="_blank">GitHub</a>
+        </div>
+
+          
+        <div class="project-card">
+            <h3>Social Media Managed</h3>
+            <p>Managing Social Medias of Anthemio Flower Shop</p>
+            <a href="https://www.instagram.com/anthemioflowershop?igsh=NDVyejJrYWt5aWt5&utm_source=qr" target="_blank">Instagram</a>
+            <a href="https://www.tiktok.com/@anthemioflowershop?_t=ZN-8vPoxsNnlMU&_r=1" target="_blank">TikTok</a>
+        </div>
+
+        
+</div>
+
+    </section>
+
+    <section id="contact" class="fade-in">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:anthiatheoha@gmail.com">anthiatheoha@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/ctheoc05" target="_blank">ctheoc05</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/chrysanthi-theocharidi-48072a311/" target="_blank">LinkedIn</a></p>
+    </section>
+  </main>
 
   <footer>
     <p>© 2025 Chrysanthi Theocharidi</p>
   </footer>
-  <script>
-    const faders = document.querySelectorAll('.fade-in');
-  
-    const appearOnScroll = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.1
-    });
-  
-    faders.forEach(fade => {
-      appearOnScroll.observe(fade);
-    });
-  </script>
-  
+
+  <script src="script.js"></script>
 </body>
 </html>
